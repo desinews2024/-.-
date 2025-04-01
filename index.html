@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>भीम जयंती समारोह</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/logo.png" alt="भीम जयंती Logo">
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-user-graduate"></i> About Dr. B.R. Ambedkar</a></li>
+                <li><a href="#committee"><i class="fas fa-users"></i> Committee Members</a></li>
+                <li><a href="#" onclick="openContactPopup()" class="cta-button"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                <li><button onclick="toggleTheme()" class="theme-toggle"><i class="fas fa-moon"></i></button></li>
+            </ul>
+        </nav>
+        <button class="mobile-nav-toggle">
+            <span class="hamburger"></span>
+        </button>
+    </header>
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <span><i class="fas fa-om"></i> जय भीम! <i class="fas fa-hands-praying"></i> || भीम जयंती की हार्दिक शुभकामनाएं! <i class="fas fa-birthday-cake"></i></span>
+            <span><i class="fas fa-balance-scale"></i> समता, स्वतंत्रता, बंधुत्व और न्याय - यही हमारा मार्गदर्शन है। <i class="fas fa-gavel"></i></span>
+        </div>
+    </div>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="img/slide3.jpg" alt="Dr. B.R. Ambedkar">
+            </div>
+            <div class="slide">
+                <img src="img/slide1.jpg" alt="Bhim Jayanti Celebration">
+            </div>
+            <div class="slide">
+                <img src="img/slide2.jpg" alt="Dr. Ambedkar Memorial">
+            </div>
+        </div>
+        <button class="slider-btn prev">&lt;</button>
+        <button class="slider-btn next">&gt;</button>
+        <div class="slider-dots"></div>
+    </div>
+
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="img/main.png" alt="Dr. B.R. Ambedkar Portrait">
+            </div>
+            <div class="about-content" style="font-family: 'Noto Sans Devanagari', sans-serif; text-rendering: optimizeLegibility;">
+                <h2 style="font-family: 'Noto Sans Devanagari', sans-serif;"><i class="fas fa-user-graduate"></i> डॉ. भीमराव अम्बेडकर</h2>
+                <div class="info-block">
+                    <h3 style="font-family: 'Noto Sans Devanagari', sans-serif;"><i class="fas fa-graduation-cap"></i> जन्म और शिक्षा</h3>
+                    <div class="animation-container">
+                        <p class="writing-animation" data-text="14 अप्रैल 1891 को मध्य प्रदेश के महू में जन्मे डॉ. अम्बेडकर ने कोलंबिया विश्वविद्यालय और लंदन स्कूल ऑफ इकोनॉमिक्स से उच्च शिक्षा प्राप्त की। " style="font-family: 'Noto Sans Devanagari', sans-serif;">14 अप्रैल 1891 को मध्य प्रदेश के महू में जन्मे डॉ. अम्बेडकर ने कोलंबिया विश्वविद्यालय और लंदन स्कूल ऑफ इकोनॉमिक्स से उच्च शिक्षा प्राप्त की।</p>
+                        <p class="writing-animation-part2" data-text="कोलंबिया विश्वविद्यालय और लंदन स्कूल ऑफ इकोनॉमिक्स से उच्च शिक्षा प्राप्त की।" style="font-family: 'Noto Sans Devanagari', sans-serif; opacity: 0; display: none;"> </p>
+                    </div>
+                </div>
+                <div class="info-block">
+                    <h3 style="font-family: 'Noto Sans Devanagari', sans-serif;"><i class="fas fa-balance-scale"></i> संविधान निर्माण में योगदान</h3>
+                    <div class="animation-container">
+                        <p class="writing-animation" data-text="भारतीय संविधान के प्रमुख वास्तुकार के रूप में, उन्होंने समानता, न्याय और बंधुत्व के सिद्धांतों को संविधान में स्थापित किया।" style="font-family: 'Noto Sans Devanagari', sans-serif;">भारतीय संविधान के प्रमुख वास्तुकार के रूप में, उन्होंने समानता, न्याय और बंधुत्व के सिद्धांतों को संविधान में स्थापित किया।</p>
+                    </div>
+                </div>
+                <div class="info-block">
+                    <h3 style="font-family: 'Noto Sans Devanagari', sans-serif;"><i class="fas fa-lightbulb"></i> प्रेरणादायक विचार</h3>
+                    <div class="animation-container">
+                        <p class="writing-animation" data-text=""शिक्षित बनो, संघर्ष करो, संगठित हो" - यह उनका प्रसिद्ध नारा था जो आज भी करोड़ों लोगों को प्रेरित करता है।" style="font-family: 'Noto Sans Devanagari', sans-serif;">"शिक्षित बनो, संघर्ष करो, संगठित हो" - यह उनका प्रसिद्ध नारा था जो आज भी करोड़ों लोगों को प्रेरित करता है।</p>
+                    </div>
+                </div>
+                <a href="https://hi.wikipedia.org/wiki/भीमराव_आम्बेडकर" target="_blank" class="read-more-btn" style="font-family: 'Noto Sans Devanagari', sans-serif;">और जानें →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="leadership-section">
+        <h2 class="section-title"><i class="fas fa-crown"></i> कार्यकारी मंडल</h2>
+        <div class="leadership-container">
+            <div class="leadership-card">
+                <div class="card-front">
+                    <div class="card-image">
+                        <img src="img/01.jpg" alt="अध्यक्ष">
+                    </div>
+                    <div class="card-content">
+                        <h3><i class="fas fa-user-tie"></i> दिलीप कुमार दास</h3>
+                        <p class="designation"><i class="fas fa-star"></i> अध्यक्ष</p>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <h3><i class="fas fa-share-alt"></i> सोशल मीडिया</h3>
+                    <div class="social-links-card">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i> Facebook</a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="leadership-card">
+                <div class="card-front">
+                    <div class="card-image">
+                        <img src="img/3.jpeg" alt="उपाध्यक्ष">
+                    </div>
+                    <div class="card-content">
+                        <h3><i class="fas fa-user-tie"></i> अजीत कुमार</h3>
+                        <p class="designation"><i class="fas fa-medal"></i> उपाध्यक्ष</p>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <h3>सोशल मीडिया</h3>
+                    <div class="social-links-card">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i> Facebook</a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="committee" class="committee-section">
+        <h2 class="section-title"><i class="fas fa-users"></i> कार्यकारिणी सदस्य</h2>
+        <div class="committee-grid">
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="img/1.jpeg" alt="सदस्य 1">
+                </div>
+                <div class="member-info">
+                    <h3><i class="fas fa-user-tie"></i> मुन्ना कुमार</h3>
+                    <p><i class="fas fa-users"></i> युवा प्रकोष्ठ</p>
+                </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="img/2.jpeg" alt="सदस्य 2">
+                </div>
+                <div class="member-info">
+                    <h3><i class="fas fa-user-tie"></i> अरविंद कुमार</h3>
+                    <p><i class="fas fa-users"></i> युवा प्रकोष्ठ</p>
+                </div>
+            </div>
+        
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="img/4.jpeg" alt="सदस्य 4">
+                </div>
+                <div class="member-info">
+                    <h3><i class="fas fa-user-tie"></i> दिलखुश कुमार</h3>
+                    <p><i class="fas fa-users"></i> युवा प्रकोष्ठ</p>
+                </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="img/5.jpeg" alt="सदस्य 5">
+                </div>
+                <div class="member-info">
+                    <h3><i class="fas fa-user"></i> सुजीत कुमार</h3>
+                    <p><i class="fas fa-users"></i> युवा प्रकोष्ठ</p>
+                </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="img/6.jpeg" alt="सदस्य 6">
+                </div>
+                <div class="member-info">
+                    <h3><i class="fas fa-user-tie"></i> सरमोदी कुमार</h3>
+                    <p><i class="fas fa-users"></i> युवा प्रकोष्ठ</p>
+                </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="img/7.jpeg" alt="सदस्य 6">
+                </div>
+                <div class="member-info">
+                    <h3><i class="fas fa-user-tie"></i> मंटू कुमार</h3>
+                    <p><i class="fas fa-users"></i> युवा प्रकोष्ठ</p>
+                </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="img/8.jpeg" alt="सदस्य 6">
+                </div>
+                <div class="member-info">
+                    <h3><i class="fas fa-user-tie"></i> बब्लू कुमार</h3>
+                    <p><i class="fas fa-users"></i> युवा प्रकोष्ठ</p>
+                </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="img/9.jpeg" alt="सदस्य 6">
+                </div>
+                <div class="member-info">
+                    <h3><i class="fas fa-user-tie"></i> कमलेश कुमार</h3>
+                    <p><i class="fas fa-users"></i> युवा प्रकोष्ठ</p>
+                </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="img/10.jpeg" alt="सदस्य 6">
+                </div>
+                <div class="member-info">
+                    <h3><i class="fas fa-user-tie"></i> रंजन कुमार</h3>
+                    <p><i class="fas fa-users"></i> युवा प्रकोष्ठ</p>
+                </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="img/11.jpeg" alt="सदस्य 6">
+                </div>
+                <div class="member-info">
+                    <h3><i class="fas fa-user-tie"></i> पिंटू कुमार</h3>
+                    <p><i class="fas fa-users"></i> युवा प्रकोष्ठ</p>
+                </div>
+            </div>
+            
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="img/12.jpeg" alt="सदस्य 6">
+                </div>
+                <div class="member-info">
+                    <h3><i class="fas fa-user-tie"></i> शिवानी कुमार</h3>
+                    <p><i class="fas fa-users"></i> युवा प्रकोष्ठ</p>
+                </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="img/13.jpeg" alt="सदस्य 6">
+                </div>
+                <div class="member-info">
+                    <h3><i class="fas fa-user-tie"></i> रंजीत कुमार</h3>
+                    <p><i class="fas fa-users"></i> युवा प्रकोष्ठ</p>
+                </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="img/14.jpeg" alt="सदस्य 6">
+                </div>
+                <div class="member-info">
+                    <h3><i class="fas fa-user-tie"></i> राहुल कुमार</h3>
+                    <p><i class="fas fa-users"></i> युवा प्रकोष्ठ</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-qr">
+                <h3><i class="fas fa-qrcode"></i> स्कैन करें</h3>
+                <img src="https://i.ibb.co/VqFgxV8/qr-code.png" alt="QR Code">
+                <p>UPI द्वारा दान करें या संपर्क जोड़ें</p>
+            </div>
+
+            <div class="footer-menu">
+                <div class="menu-column">
+                    <h3><i class="fas fa-link"></i> क्विक लिंक्स</h3>
+                    <ul>
+                        <li><a href="#about"><i class="fas fa-info-circle"></i> हमारे बारे में</a></li>
+                        <li><a href="#events"><i class="fas fa-calendar-check"></i> कार्यक्रम</a></li>
+                        <li><a href="#privacy"><i class="fas fa-shield-alt"></i> प्राइवेसी पॉलिसी</a></li>
+                    </ul>
+                </div>
+                <div class="menu-column">
+                    <h3><i class="fas fa-share-alt"></i> सोशल मीडिया</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i> Facebook</a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i> Twitter</a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i> YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="contact-cta" onclick="openContactPopup()"><i class="fas fa-phone-alt"></i> संपर्क करें</button>
+
+    <!-- Contact Popup -->
+    <div id="contactPopup" class="popup-overlay">
+        <div class="popup-content">
+            <span class="close-popup" onclick="closeContactPopup()">&times;</span>
+            <h2><i class="fas fa-envelope"></i> संपर्क करें</h2>
+            <form id="contactForm" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name"><i class="fas fa-user"></i> नाम *</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile"><i class="fas fa-mobile-alt"></i> मोबाइल नंबर *</label>
+                    <input type="tel" id="mobile" pattern="[0-9]{10}" required>
+                </div>
+                <div class="form-group">
+                    <label for="message"><i class="fas fa-comment"></i> संदेश *</label>
+                    <textarea id="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> भेजें</button>
+            </form>
+        </div>
+    </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
