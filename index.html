@@ -13,6 +13,43 @@
         body {
             font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;
         }
+        
+        /* Mobile layout for committee members - showing exactly 2 per row */
+        @media (max-width: 768px) {
+            .committee-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 1rem;
+            }
+            
+            .member-card {
+                margin-bottom: 1rem;
+            }
+            
+            .member-image {
+                height: 250px;
+            }
+        }
+        
+        /* Smaller mobile screens */
+        @media (max-width: 480px) {
+            .committee-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 0.75rem;
+            }
+            
+            .member-image {
+                height: 180px;
+            }
+            
+            .member-info h3 {
+                font-size: 1rem;
+            }
+            
+            .member-info p {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 
@@ -247,6 +284,72 @@
             <div class="member-card">
                 <div class="member-image">
                     <img src="img/14.jpeg" alt="सदस्य 6">
+                </div>
+                <div class="member-info">
+                    <h3><i class="fas fa-user-tie"></i> राहुल कुमार</h3>
+                    <p><i class="fas fa-users"></i> युवा प्रकोष्ठ</p>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="img/15.jpeg" alt="सदस्य 6">
+                </div>
+                <div class="member-info">
+                    <h3><i class="fas fa-user-tie"></i> धीरज कुमार</h3>
+                    <p><i class="fas fa-users"></i> युवा प्रकोष्ठ</p>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="img/16.jpeg" alt="सदस्य 6">
+                </div>
+                <div class="member-info">
+                    <h3><i class="fas fa-user-tie"></i> सूरज कुमार</h3>
+                    <p><i class="fas fa-users"></i> युवा प्रकोष्ठ</p>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="img/17.jpeg" alt="सदस्य 6">
+                </div>
+                <div class="member-info">
+                    <h3><i class="fas fa-user-tie"></i> दिनेश कुमार</h3>
+                    <p><i class="fas fa-users"></i> युवा प्रकोष्ठ</p>
+                </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="img/18.jpeg" alt="सदस्य 6">
+                </div>
+                <div class="member-info">
+                    <h3><i class="fas fa-user-tie"></i> संदीप कुमार</h3>
+                    <p><i class="fas fa-users"></i> युवा प्रकोष्ठ</p>
+                </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="img/19.jpeg" alt="सदस्य 6">
+                </div>
+                <div class="member-info">
+                    <h3><i class="fas fa-user-tie"></i> अमीर कुमार</h3>
+                    <p><i class="fas fa-users"></i> युवा प्रकोष्ठ</p>
+                </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="img/20.jpeg" alt="सदस्य 6">
+                </div>
+                <div class="member-info">
+                    <h3><i class="fas fa-user-tie"></i> रामप्रवेश कुमार</h3>
+                    <p><i class="fas fa-users"></i> युवा प्रकोष्ठ</p>
+                </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="img/21.jpeg" alt="सदस्य 6">
                 </div>
                 <div class="member-info">
                     <h3><i class="fas fa-user-tie"></i> राहुल कुमार</h3>
